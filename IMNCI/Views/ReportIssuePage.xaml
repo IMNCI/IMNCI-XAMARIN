@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="IMNCI.Views.ReportIssuePage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="16">
+                <Label Text="Your Name" VerticalOptions="Start" FontSize="Small"/>
+                <Entry x:Name="name" Placeholder="Your Name" />
+                <Label Text="Your Email" VerticalOptions="Start" FontSize="Small"/>
+                <Entry x:Name="email" Placeholder="Your Email" Keyboard="Email"/>
+                <Label Text="What is the issue being experienced?" />
+                <Picker x:Name="issue" HorizontalOptions="FillAndExpand" Title="Select Issue">
+                    <Picker.Items>
+                        <x:String>Performace</x:String>
+                        <x:String>Content</x:String>
+                        <x:String>Other</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Text="Provide a description below"/>
+                <Editor x:Name="description" BackgroundColor="#EEEEEE" HeightRequest="150"></Editor>
+
+                <Button x:Name="report" Text="REPORT ISSUE" Clicked="HandleReportIssueClicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

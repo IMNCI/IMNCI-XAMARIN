@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="IMNCI.KeyElementsPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="infoIcon" Activated="handleInfoClickedAsync" />
+        <ToolbarItem Icon="homeIcon" Activated="handleHomeClicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout
+                Padding="16"
+                Spacing="8">
+                <Label
+                    Text="By using the IMCI chart booklet and implementing on the guidelines the health workers will be able to implement
+on the key elements of IMCI:"></Label>
+                <Label
+                Text = "Assessment"
+                FontAttributes="Bold"/>
+                <Label>
+                    <Label.Text>
+                       The assess column in the chart booklet describes how to take history and do a physical exam.
+Assess for common illnesses in children by asking questions about common conditions, examining the child and checking for other routine services such as immunization and nutrition 
+                    </Label.Text>
+                </Label>
+
+                <Label
+                Text = "Classification" 
+                FontAttributes="Bold"/>
+                <Label
+                    Text="Health workers will be able to classify childrens’ illnesses using the colour- coded triage system. The classifications
+contained in the booklet are based on whether the diagnosed illness are:"></Label>
+                <StackLayout Orientation="Horizontal" Spacing="8">
+                    <BoxView Color="#ff69b4" WidthRequest="60" HeightRequest="50"/>
+                    <Label Text="Severe Classification needing admission or pre-referral treatment and referral" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="8">
+                    <BoxView Color="#FFD700" WidthRequest="60" HeightRequest="50"/>
+                    <Label Text="A classification needing specific medical treatment and advice" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="8">
+                    <BoxView Color="#32CD32" WidthRequest="60" HeightRequest="50"/>
+                    <Label Text="Not serious and in most cases no drugs are needed. Simple advice on home management given" />
+                </StackLayout>
+
+                <Label
+                Text = "Identify Treatment" 
+                FontAttributes="Bold"/>
+                <Label Text="The identify treatment column helps the health workers to quickly and accurately identify treatments for the
+classifications selected. If a child has more than one classification, the health worker must look at more than one
+table to find the appropriate treatments." />
+
+                <Label
+                Text = "Treat" 
+                FontAttributes="Bold"/>
+                <Label Text="The treat column shows how to administer the treatment identified for the classifications. Treat means giving
+treatment in the facility, prescribing drugs or other treatments to be given at home and also teaching the caregiver
+how to administer treatment at home." />
+
+                <Label
+                Text = "Counsel" 
+                FontAttributes="Bold"/>
+                <Label Text="If follow up care is indicated, teach the mother when to return to the clinic. Also teach the mother how to recognize
+signs indicating that the child should be brought back to the facility immediately." />
+
+                <Label
+                Text = "Follow Up" 
+                FontAttributes="Bold"/>
+                <Label Text="Some children need to be seen more than once for a current episode of illness. Identify such children and when
+they are brought back offer appropriate follow up care as indicated in the IMCI guidelines and also reassess the
+child for any new problems." />
+
+                <Button x:Name="proceed" Text="Proceed"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="IMNCI.Views.MainMenuPage">
+    <ContentPage.Content>
+        <StackLayout Padding="4, 4, 4, 24">
+            <Grid BackgroundColor="Transparent">
+                 <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    BackgroundColor="#E0E0E0">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="handleAssessClassifyClick" />
+                    </Grid.GestureRecognizers>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="7*"/>
+                        <RowDefinition Height="3*"/>
+                    </Grid.RowDefinitions>
+                    <ContentView Padding="10">
+                    <Image Source="report.png" Grid.Row="0"/>
+                    </ContentView>
+                    <ContentView BackgroundColor="#FF7043" Padding="2" Grid.Row="1">
+                        <Label TextColor="White" Font="12" Text="Assess Classify and Treat" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                    </ContentView>
+                </Grid>
+
+                <Grid
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    BackgroundColor="#E0E0E0">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="handleTreatClick" />
+                    </Grid.GestureRecognizers>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="7*"/>
+                        <RowDefinition Height="3*"/>
+                    </Grid.RowDefinitions>
+                    <ContentView Padding="10">
+                    <Image Source="injection.png" Grid.Row="0"/>
+                    </ContentView>
+                    <ContentView BackgroundColor="#99cc00" Padding="2" Grid.Row="1">
+                        <Label Font="12" Text="Treat the Infact/Child" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White"/>
+                    </ContentView>
+                </Grid>
+
+                <Grid
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    BackgroundColor="#E0E0E0">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="handleCounselClick" />
+                    </Grid.GestureRecognizers>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="7*"/>
+                        <RowDefinition Height="3*"/>
+                    </Grid.RowDefinitions>
+                    <ContentView Padding="10" Grid.Row="0">
+                        <Image Source="motherhood.png" />
+                    </ContentView>
+                    <ContentView BackgroundColor="#AA66CC" Padding="2" Grid.Row="1">
+                        <Label Font="12" Text="Counsel the Mother" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White"/>
+                    </ContentView>
+                </Grid>
+
+                <Grid
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    BackgroundColor="#E0E0E0">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="handleFollowUpClick" />
+                    </Grid.GestureRecognizers>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="7*"/>
+                        <RowDefinition Height="3*"/>
+                    </Grid.RowDefinitions>
+                    <ContentView Padding="10" Grid.Row="0">
+                        <Image Source="stethoscope.png" />
+                    </ContentView>
+                    <ContentView BackgroundColor="#ffbb33" Padding="2" Grid.Row="1">
+                        <Label Font="12" Text="Follow Up Care" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White"/>
+                    </ContentView>
+
+                </Grid>
+
+                <Grid
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    BackgroundColor="#E0E0E0">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="handleHIVClick" />
+                    </Grid.GestureRecognizers>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="7*"/>
+                        <RowDefinition Height="3*"/>
+                    </Grid.RowDefinitions>
+                    <ContentView Padding="10" Grid.Row="0">
+                        <Image Source="aids.png" />
+                    </ContentView>
+                    <ContentView BackgroundColor="#ff4444" Padding="2" Grid.Row="1">
+                        <Label Font="12" Text="HIV Care for Children" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White"/>
+                    </ContentView>
+                </Grid>
+
+                <Grid
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    BackgroundColor="#E0E0E0">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="handleGalleryClick" />
+                    </Grid.GestureRecognizers>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="7*"/>
+                        <RowDefinition Height="3*"/>
+                    </Grid.RowDefinitions>
+                    <ContentView Padding="10" Grid.Row="0">
+                        <Image Source="gallery.png" />
+                    </ContentView>
+                    <ContentView BackgroundColor="#33b5e5" Padding="2" Grid.Row="1">
+                        <Label Font="12" Text="Gallery" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White"/>
+                    </ContentView>
+                </Grid>
+
+                <!--<Grid
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    BackgroundColor="#E0E0E0">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="handleGlossaryClick" />
+                    </Grid.GestureRecognizers>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="7*"/>
+                        <RowDefinition Height="3*"/>
+                    </Grid.RowDefinitions>
+                    <ContentView Padding="10" Grid.Row="0">
+                        <Image Source="big-dictionary.png" />
+                    </ContentView>
+                    <ContentView BackgroundColor="#43A047" Padding="2" Grid.Row="1">
+                        <Label Font="12" Text="Glossary" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White"/>
+                    </ContentView>
+                </Grid>-->
+
+                <Grid
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    BackgroundColor="#E0E0E0">
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="handleReportIssue" />
+                    </Grid.GestureRecognizers>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="7*"/>
+                        <RowDefinition Height="3*"/>
+                    </Grid.RowDefinitions>
+                    <ContentView Padding="10" Grid.Row="0">
+                        <Image Source="consulting-message.png" />
+                    </ContentView>
+                    <ContentView BackgroundColor="#795548" Padding="2" Grid.Row="1">
+                        <Label Font="12" Text="Report an Issue" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White"/>
+                    </ContentView>
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

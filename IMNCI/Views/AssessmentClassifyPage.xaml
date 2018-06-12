@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="IMNCI.Views.AssessmentClassifyPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="ClassificationParents" ItemSelected="OpenDetails">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="16" HeightRequest="60">
+                                <Label FontSize="14" Text="{Binding .}" HorizontalOptions="Fill" VerticalOptions="Center"></Label>
+                                <Button Image="right-arrow" HorizontalOptions="EndAndExpand" WidthRequest="12"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

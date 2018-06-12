@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="IMNCI.Views.InfoPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout
+                Padding="16"
+                Spacing="8">
+                <Label Text="Background"
+                       FontAttributes="Bold"/>
+                <Label
+                    FontSize="14">
+                    <Label.Text>
+                        In Kenya, 52 out of every 1000 children born do not live to be five years of age (KDHS 2014). 70% of all deaths in children can be attributed to easily preventable and treatable diseases namely: Acute respiratory infections (mostly pneumonia), Diarrhoea, Measles, Malaria, Malnutrition and Anaemia and HIV. Often, children succumb to a combination of these conditions - with children presenting in health facilities with the combined signs and symptoms of more than one of these diseases. Evidence from various assessments has shown that many of these children are not comprehensively assessed, treated and given the appropriate advice. Recognizing the need to improve on the care of these children, WHO and UNICEF developed the Integrated Management of Childhood illness (IMCI) strategy which emphasizes on integrated case management of most common childhood diseases.Kenya in the year 2000 adopted the IMCI strategy which forms a critical part of the Kenya Essential Package for Health (KEPH).
+                    </Label.Text>
+                </Label>
+
+                <Label
+                Text="What is IMCI?"
+                FontAttributes="Bold"/>
+                <Label
+                    FontSize="14">
+                    <Label.Text>
+                        The Integrated Management of Childhood Illness (IMCI) case management approach offers simple and effective methods to comprehensively prevent and manage the leading causes of serious illness and mortality in children below five years. With IMCI, sick children are not only treated for the signs and symptoms they present with in a health facility, but are also assessed for the other disease conditions they may be suffering from.\nIMCI is based on the following principles:
+                    </Label.Text>
+                </Label>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label 
+                        Text="&#x2022;"
+                    />
+                    <Label
+                        FontSize="14">
+                        <Label.Text>
+                            Children and infants are then assessed for main symptoms. For the older children, the symptoms included cough or difficulty breathing, diarrhoea, fever, HIV, ear infections, anaemia, measles and malnutrition.
+                        </Label.Text>
+                    </Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label 
+                        Text="&#x2022;"
+                    />
+                    <Label
+                        FontSize="14">
+                        <Label.Text>
+                            A combination of individual signs then lead to the child’s classification within one or more symptom groups.
+                        </Label.Text>
+                    </Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label 
+                        Text="&#x2022;"
+                    />
+                    <Label
+                        FontSize="14">
+                        <Label.Text>
+                            Essential drugs are then used to treat the children. Lastly, counseling of caregivers regarding home care, appropriate feeding and fluids and when to return to facility- immediately or for follow up, is done.
+                        </Label.Text>
+                    </Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label 
+                        Text="&#x2022;"
+                    />
+                    <Label
+                        FontSize="14">
+                        <Label.Text>
+                            All sick children aged upto to five years of age are examined for general danger signs and all young infants are examined for signs of very severe disease. These signs indicate the need for immediate referral or admission to hospital.
+                        </Label.Text>
+                    </Label>
+                </StackLayout>
+
+                <Label
+                    Text="IMCI has 6 major steps:"
+                    FontSize="14"
+                />
+                <Image Source="imci_steps" />
+                <Label Text="Where can IMCI be applied?"
+                       FontAttributes="Bold"/>
+                <Label Text="The IMCI approach is designed for use in clinical settings at all levels of health care in Kenya where children under five years are managed. These are: dispensaries, health centres, sub-county, county, national and refferal hospitals, referral hospitals including faith based and private health facilities." 
+                       FontSize="14"/>
+
+                <Label Text="What is the IMCI Chart booklet?"
+                       FontAttributes="Bold"/>
+                <Label Text="Kenya’s IMCI guidelines are packaged in this chart booklet. The chart booklet provides a simplified step-by -step guide to a health care worker on case management of children below 5 years of age visiting health facilities. The chart booklet summarizes and describes the 5-step IMCI process illustrated above." 
+                       FontSize="14"/>
+
+                <Label Text="Who can apply the IMCI approach?"
+                       FontAttributes="Bold"/>
+                <Label Text="The IMCI process can be applied by any health worker working in settings where children below five years are managed. These should include: doctors, clinical officers and nurses." 
+                       FontSize="14"/>
+                <Label Text="What should you do when you receive the IMCI chart booklet at your facility?"
+                       FontAttributes="Bold"/>
+                <Label Text="The Ministry of Health has distributed the IMCI chart booklet to all health facilities in Kenya. Upon receiving a copy at your facility, all health workers should familiarize themselves with the guidelines and begin immediate implementation/use.\nNB: the hard copy of the chart booklet should remain at the health facility at all times." 
+                       FontSize="14"/>
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

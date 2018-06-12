@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="IMNCI.ProfilePage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Skip" Clicked="skipProfile"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout
+                Padding="16"
+                Spacing="10">
+                <Label 
+                    Text="We would like you to provide us with some personal information for app improvement. Please fill in the form below"
+                    FontSize="Medium"
+                />
+
+                <Label Text="Email Address" VerticalOptions="Start" FontSize="Small"/>
+                <Entry 
+                    Placeholder="Email Address"
+                    x:Name="email_address"
+                    Keyboard="Email"/>
+
+                <Label Text="Phone Number" FontSize="Small"/>
+                <Entry
+                    Placeholder="Phone Number"
+                    x:Name="phone_number"
+                    Keyboard="Telephone"
+                    />
+
+                <Label Text="Gender" VerticalOptions="Start" FontSize="Small"/>
+                <Picker x:Name="gender" HorizontalOptions="FillAndExpand" Title="Select Gender">
+                    <Picker.Items>
+                        <x:String>Male</x:String>
+                        <x:String>Female</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Age Group" VerticalOptions="Start" FontSize="Small"/>
+                <Picker x:Name="age_group" HorizontalOptions="FillAndExpand" Title="Select your age group">
+                    <Picker.ItemsSource>
+                    </Picker.ItemsSource>
+                </Picker>
+
+                <Label Text="County" VerticalOptions="Start" FontSize="Small"/>
+                <Picker x:Name="county" HorizontalOptions="FillAndExpand" Title="Select your county">
+                    <Picker.ItemDisplayBinding>
+                        <Binding Path="county" />
+                    </Picker.ItemDisplayBinding>
+                </Picker>
+
+                <Label Text="Profession" VerticalOptions="Start" FontSize="Small"/>
+                <Picker x:Name="profession" HorizontalOptions="FillAndExpand" Title="Select your profession" SelectedIndexChanged="handleProfessionChange">
+                    <Picker.ItemsSource>
+                        
+                    </Picker.ItemsSource>
+                </Picker>
+
+                <StackLayout
+                    x:Name="cadreLayout"
+                    IsVisible="false">
+                    <Label Text="Cadre" VerticalOptions="Start" FontSize="Small"/>
+                    <Picker x:Name="cadre" HorizontalOptions="FillAndExpand" Title="Select your cadre">
+                        <Picker.ItemsSource>
+                            
+                        </Picker.ItemsSource>
+                    </Picker>
+                </StackLayout>
+
+                <Label Text="Sector" VerticalOptions="Start" FontSize="Small"/>
+                <Picker x:Name="sector" HorizontalOptions="FillAndExpand" Title="Select your sector">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Public</x:String>
+                            <x:String>Private</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+                <Button Text="Submit Profile" Clicked="submitProfile"/>
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

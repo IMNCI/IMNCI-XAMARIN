@@ -1,0 +1,63 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "IMNCI", "IMNCI\IMNCI.shproj", "{AE0A29F8-C75A-403E-9FD4-4D3BCF07F87D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMNCI.iOS", "iOS\IMNCI.iOS.csproj", "{F896DEC6-3763-4C17-8BD2-313E3B620DAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMNCI.Droid", "Droid\IMNCI.Droid.csproj", "{9C0734D0-1401-4B67-B2B3-18ABC6AAE4C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMNCI.MobileAppService", "MobileAppService\IMNCI.MobileAppService.csproj", "{AA7EB8CE-BBD1-4457-8D93-1A498AF2B937}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F896DEC6-3763-4C17-8BD2-313E3B620DAC}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{F896DEC6-3763-4C17-8BD2-313E3B620DAC}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{F896DEC6-3763-4C17-8BD2-313E3B620DAC}.Release|iPhone.ActiveCfg = Release|iPhone
+		{F896DEC6-3763-4C17-8BD2-313E3B620DAC}.Release|iPhone.Build.0 = Release|iPhone
+		{F896DEC6-3763-4C17-8BD2-313E3B620DAC}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{F896DEC6-3763-4C17-8BD2-313E3B620DAC}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{F896DEC6-3763-4C17-8BD2-313E3B620DAC}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{F896DEC6-3763-4C17-8BD2-313E3B620DAC}.Debug|iPhone.Build.0 = Debug|iPhone
+		{F896DEC6-3763-4C17-8BD2-313E3B620DAC}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{F896DEC6-3763-4C17-8BD2-313E3B620DAC}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{F896DEC6-3763-4C17-8BD2-313E3B620DAC}.Release|Any CPU.ActiveCfg = Release|iPhone
+		{F896DEC6-3763-4C17-8BD2-313E3B620DAC}.Release|Any CPU.Build.0 = Release|iPhone
+		{9C0734D0-1401-4B67-B2B3-18ABC6AAE4C3}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{9C0734D0-1401-4B67-B2B3-18ABC6AAE4C3}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{9C0734D0-1401-4B67-B2B3-18ABC6AAE4C3}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{9C0734D0-1401-4B67-B2B3-18ABC6AAE4C3}.Release|iPhone.Build.0 = Release|Any CPU
+		{9C0734D0-1401-4B67-B2B3-18ABC6AAE4C3}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{9C0734D0-1401-4B67-B2B3-18ABC6AAE4C3}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{9C0734D0-1401-4B67-B2B3-18ABC6AAE4C3}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{9C0734D0-1401-4B67-B2B3-18ABC6AAE4C3}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{9C0734D0-1401-4B67-B2B3-18ABC6AAE4C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C0734D0-1401-4B67-B2B3-18ABC6AAE4C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C0734D0-1401-4B67-B2B3-18ABC6AAE4C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C0734D0-1401-4B67-B2B3-18ABC6AAE4C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA7EB8CE-BBD1-4457-8D93-1A498AF2B937}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{AA7EB8CE-BBD1-4457-8D93-1A498AF2B937}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{AA7EB8CE-BBD1-4457-8D93-1A498AF2B937}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{AA7EB8CE-BBD1-4457-8D93-1A498AF2B937}.Release|iPhone.Build.0 = Release|Any CPU
+		{AA7EB8CE-BBD1-4457-8D93-1A498AF2B937}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{AA7EB8CE-BBD1-4457-8D93-1A498AF2B937}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{AA7EB8CE-BBD1-4457-8D93-1A498AF2B937}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{AA7EB8CE-BBD1-4457-8D93-1A498AF2B937}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{AA7EB8CE-BBD1-4457-8D93-1A498AF2B937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA7EB8CE-BBD1-4457-8D93-1A498AF2B937}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA7EB8CE-BBD1-4457-8D93-1A498AF2B937}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA7EB8CE-BBD1-4457-8D93-1A498AF2B937}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		description = This application which is based on the IMNCI Guidelines - 2017 Edition is aimed at strengthening the management of neonatal & childhood illnesses by equipping health care workers with information that is easily accessible & friendly to use from their mobile phones.
+		version = 2.1
+	EndGlobalSection
+EndGlobal
